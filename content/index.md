@@ -59,7 +59,7 @@ Don't forget to check out additional course materials from ...
 :::{admonition} CC BY-SA for media and pedagogical material
 :class: attention dropdown
 
-Copyright © 2025 XXX. This material is released by XXX under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+Copyright © 2026 Mimer AI Factory. This material is released by Mimer AI Factory under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 
 **Canonical URL**: <https://creativecommons.org/licenses/by-sa/4.0/>
 
