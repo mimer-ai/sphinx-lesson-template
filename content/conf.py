@@ -17,9 +17,8 @@
 project = "Your lesson name"
 # FIXME: insert correct author
 author = "The contributors"
-copyright = f"2025, Mimer AI Factory, {author}"
+copyright = f"2026, Mimer AI Factory, {author}"
 
-# FIXME: github organization / user that the repository belongs to
 github_user = "mimer-ai"
 github_repo_name = ""  # auto-detected from dirname if blank
 github_version = "main"
