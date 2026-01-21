@@ -17,10 +17,10 @@
 project = "Your lesson name"
 # FIXME: insert correct author
 author = "The contributors"
-copyright = f"2025, ENCCS, {author}"
+copyright = f"2025, Mimer AI Factory, {author}"
 
 # FIXME: github organization / user that the repository belongs to
-github_user = "ENCCS"
+github_user = "mimer-ai"
 github_repo_name = ""  # auto-detected from dirname if blank
 github_version = "main"
 conf_py_path = "/content/"  # with leading and trailing slash
@@ -92,10 +92,10 @@ html_theme = "furo"
 html_static_path = ["_static"]
 html_css_files = ["overrides.css"]
 html_favicon = str((HERE / "_static" / "favicon.ico").resolve())
-github_repo_url = f"https://github.com/ENCCS/{github_repo_name or detected_repo_name}"
+github_repo_url = f"https://github.com/mimer-ai/{github_repo_name or detected_repo_name}"
 html_theme_options = {
-    "light_logo": "ENCCS_logo_light.png",
-    "dark_logo": "ENCCS_logo_dark.png",
+    "light_logo": "Mimer_logo_light.png",
+    "dark_logo": "Mimer_logo_dark.png",
     "source_repository": github_repo_url,
     "source_branch": github_version,
     "source_directory": conf_py_path,
