@@ -74,9 +74,10 @@ jobs:
           pip list --not-required
           pip list
 
+      # - uses: sphinx-doc/github-problem-matcher@v1
+      - uses: sphinx-doc/github-problem-matcher@1f74d6599f4a5e89a20d3c99aab4e6a70f7bda0f
 
       # Build
-      - uses: ammaraskar/sphinx-problem-matcher@master
       - name: Build Sphinx docs (dirhtml)
         # SPHINXOPTS used via environment variables
         run: |
@@ -108,7 +109,8 @@ jobs:
       # one deployment. See
       # https://github.com/coderefinery/gh-pages-multibranch
       - name: gh-pages multibranch
-        uses: coderefinery/gh-pages-multibranch@main
+        # uses: coderefinery/gh-pages-multibranch@main
+        uses: coderefinery/gh-pages-multibranch@62c62374e257fd106d44394788a806473f53b86b
         if: ${{ (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && env.MULTIBRANCH == 'true' }}
         with:
           directory: _gh-pages/
@@ -154,7 +156,8 @@ jobs:
       # Deploy
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        # uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@4b09552702d0b65573696410d4707c765da2630b
         if: ${{ (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && ( env.MULTIBRANCH == 'true' || github.ref == format('refs/heads/{0}', env.DEFAULT_BRANCH )) }}
         with:
           publish_branch: gh-pages
