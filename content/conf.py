@@ -149,14 +149,13 @@ intersphinx_mapping = {
 
 import os
 
-if os.environ.get('GITHUB_REF', '') == 'refs/heads/main':
+if os.environ.get("GITHUB_REF", "") == "refs/heads/main":
     html_js_files = [
         (
-            'https://plausible.io/js/script.js',
+            "https://plausible.io/js/script.js",
             {
-                "data-domain": f"learn.mimer-ai.eu/{detected_repo_name}",
-                "defer": "defer"
-            }
+                "data-domain": f"learn.mimer-ai.eu/{github_repo_name or detected_repo_name}",
+                "defer": "defer",
+            },
         ),
     ]
-
